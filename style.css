@@ -1,0 +1,173 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 30%;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+#burger{
+    padding: 20px 0;
+    background: deepskyblue;
+}
+
+.burger-menu ion-icon{
+    font-size: 25px;
+    color: white;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    position: relative;
+}
+
+.burger{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-btn {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.close-btn{
+    display: none;
+}
+
+.menu{
+    width: 50%;
+    height: 60vh;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.menu a{
+    font-size: 30px;
+    color: white;
+    padding: 10px 0;
+}
+
+.menu {
+    display: none;
+    animation: menu .5s alternate linear;
+}
+
+@keyframes menu {
+    0%{
+        width: 0;
+    }
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.modal-window {
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.91);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.window{
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    display: none;
+}
+
+.modal{
+    width: 60%;
+    background: rgba(43, 45, 48, 0.56);
+    height: 60vh;
+    border-radius: 30px;
+    position: relative;
+    animation: modal 0.7s alternate linear;
+    display: flex;
+    justify-content:center;
+   align-items: center;
+}
+@keyframes modal {
+    0%{
+        transform: scale(0);
+
+    }
+}
+
+
+.modal-close{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+.modal-text h2{
+    color: rgba(255, 255, 255, 0.77);
+    padding: 15px 0;
+}
+
+.modal-text  button{
+    padding: 10px 20px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    margin-left: 50px;
+
+}
+
